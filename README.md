@@ -74,4 +74,4 @@ python test.py
 
 ---
 
-Made with ❤️ as part of the **Tamizhan Skills Internship Projects**.
+## Made with ❤️ as part of the Tamizhan Skills Internship Projects.
