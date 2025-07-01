@@ -1,4 +1,4 @@
-# 🧠 Project 8: TamizhanBot - A Rule-Based Chatbot
+# 🧠 Project 8: Tamizhan Bot - A Rule-Based Chatbot
 
 Tamizhan Bot is a simple yet intelligent **rule-based chatbot** designed to interact with users and answer queries about **Tamizhan Skills** — such as courses, instructors, fees, internships, and more.
 
