@@ -29,7 +29,7 @@ class TamizhanBot:
             'internship_info_intent': r'.*\b(internship|intern|training)\b.*',
             'fees_info_intent': r'.*\b(fees?|cost|price)\b.*',
             'placement_info_intent': r'.*\b(placement|job|career)\b.*',
-            'duration_info_intent': r'.*\b(duration|time|how long)\b.*',
+            'duration_info_intent': r'.*\b(duration|how long|length|time period)\b.*',
             'help_intent': r'\bhelp\b',
             'greeting_intent': r'\b(hi|hello|hey)\b',
             'thanks_intent': r'\b(thanks|thank you|ty)\b'
@@ -100,7 +100,22 @@ class TamizhanBot:
 
     # Match Reply
     def match_reply(self, reply):
-        for intent, pattern in self.intents.items():
+        if re.search(r'\b(thanks|thank you|bye|goodbye)\b', reply):
+            self.type_reply(f"You're most welcome, {self.name}! Have a great day ahead! 👋")
+            sys.exit()
+        for intent in [
+            'duration_info_intent',
+            'courses_info_intent',
+            'instructor_info_intent',
+            'contact_info_intent',
+            'why_learn_intent',
+            'internship_info_intent',
+            'fees_info_intent',
+            'placement_info_intent',
+            'help_intent',
+            'greeting_intent'
+        ]:
+            pattern = self.intents[intent]
             if re.search(pattern, reply):
                 return self.trigger_intent(intent)
 
