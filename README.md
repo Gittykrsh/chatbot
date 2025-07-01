@@ -22,6 +22,12 @@ Tamizhan Bot is a simple yet intelligent **rule-based chatbot** designed to inte
 
 ---
 
+## 🖥️ GUI Preview
+
+![Preview](https://github.com/user-attachments/assets/92193e74-a399-4e99-bb41-a2051d7fa1f4)
+
+---
+
 ## 💡 Example Interactions
 
 ```txt
