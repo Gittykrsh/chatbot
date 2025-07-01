@@ -63,7 +63,7 @@ Tell me about your instructors
 ## 📦 How to Run
 
 ```bash
-python test.py
+python chatbot.py
 ```
 
 ---
